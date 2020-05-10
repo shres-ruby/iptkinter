@@ -21,15 +21,6 @@ def save_info():
     file.write("\n")
     file.write(comment_info)
     file.write("\n")
-
-    if sourceip.get()[3:5]=="50" and destinationip.get()[3:5]=="20":
-        file.write("Severity High - The user has gained access to a workstation and a server")
-    elif sourceip.get()[3:5]=="50" and destinationip.get()[3:5]=="50":
-        file.write("Severity High - The user has gained access to two workstations")
-    elif sourceip.get()[3:5]=="20" and destinationip.get()[3:5]=="20":
-        file.write("Severity High - The user has gained access to two servers")
-
-    file.write("\n")
     file.write("_____________________")
     file.write("\n")
     file.close()
